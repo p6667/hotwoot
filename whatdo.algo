@@ -1,0 +1,36 @@
+<?php
+
+	function seed($url) {
+		// l'url maitresse, on donne une url et on lance le premier discover du programme
+	}
+
+	function discover() {
+		// il y a un article sur "une tortue s'est casse la gueule", chercher sur les moteurs "une tortue s'est casse la gueule", recuperer les urls des autres contenus et les feed
+	}
+
+	function feed($url) {
+		// traiter url (url, screenshot, titre, favico, description, tags)
+		// ajouter les liens sortants a la queue de crawl
+	}
+
+	function rank($url) {
+		//si on connait le dernier rank, on le retourne
+		//si on connait pas
+		//-- on note l'heure de decouverte
+		//-- on note combien de fois elle a ete partagee sur internet
+		//-- on ajoute a la queue pour tester t+g
+		//-- g = temps de latence que l'on donne au systeme pour observer et quantifier la vitesse de circulation du contenu
+		//-- une fois en t+g, refaire le calcul de propagation (t+g:val - t:val) / l'heure de decouverte je crois
+		// ca donne une metrique qui decrit la vitesse de propagation d'un contenu sur internet
+	}
+  
+  -- use orbitdb for distributed database
+  -- everything distributed
+  -- client and server single software
+  -- while consuming content on client, server works on crawling
+  -- mettre des delais pour eviter de se faire bannir quand on recupere le nombre de partages
+  -- moteur de recherche distribué qui appartient à tout le monde
+  
+  -- approfondir: avoir un client et un serveur de traitement d'informations binaires pour s'echanger la puissance de calcul.
+  
+  electricité peer2peer
